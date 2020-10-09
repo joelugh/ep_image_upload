@@ -7,12 +7,14 @@
         "aceAttribsToClasses" : "ep_image_upload/static/js/clientHooks",
         "aceDomLineProcessLineAttributes" : "ep_image_upload/static/js/clientHooks",
         "aceInitialized": "ep_image_upload/static/js/clientHooks",
-        "collectContentImage": "ep_image_upload/static/js/clientHooks",
+        "collectContentImage": "ep_image_upload/static/js/shared",
         "aceRegisterBlockElements": "ep_image_upload/static/js/clientHooks",
         "aceEditorCSS": "ep_image_upload/static/js/clientHooks"
       },
       "hooks":{
         "eejsBlock_styles": "ep_image_upload/static/js/serverHooks",
+        "collectContentImage": "ep_image_upload/static/js/shared",
+        "collectContentPost": "ep_image_upload/static/js/shared",
         "clientVars": "ep_image_upload/static/js/serverHooks",
         "padInitToolbar": "ep_image_upload/static/js/serverHooks",
         "eejsBlock_body": "ep_image_upload/static/js/serverHooks",

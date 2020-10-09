@@ -178,19 +178,7 @@ exports.aceInitialized = function (hook, context) {
     editorInfo.ace_addImage = _(image.addImage).bind(context);
     editorInfo.ace_removeImage = _(image.removeImage).bind(context);
 };
-
-exports.collectContentImage = function (name, context) {
-    var tname = context.tname;
-    var state = context.state;
-    var lineAttributes = state.lineAttributes;
-    if (tname === 'div' || tname === 'p') {
-        delete lineAttributes.img;
-    }
-    if (tname === 'img') {
-        lineAttributes.img = context.node.outerHTML;
-    }
-};
-
+  
 exports.aceRegisterBlockElements = function () {
     return ['img'];
 };
